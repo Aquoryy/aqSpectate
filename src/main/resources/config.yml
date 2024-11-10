@@ -1,0 +1,35 @@
+settings:
+  max-spectators: 3
+  too-many-spectators: '&cЗа этим игроком итак много кто следит.'
+
+  max-range: 30
+  too-far-target: '&cВы улетели от игрока &e{target} &cслишком далеко.'
+
+messages:
+  no-permission: '&cУ вас недостаточно прав.'
+  no-arg: '&cТакого аргумента не существует.'
+  no-console: '&cКоманда доступна только игрокам :c'
+  help-admin:
+    - ''
+    - ' &c/{label} start <игрок> &7- Начать слежку за игроком.'
+    - ' &c/{label} end &7- Закончить слежку за игроком.'
+    - ' &c/{label} reload &7- Перезагрузить конфиги.'
+    - ''
+  help-user:
+    - ''
+    - ' &c/{label} start <игрок> &7- Начать слежку за игроком.'
+    - ' &c/{label} end &7- Закончить слежку за игроком.'
+    - ''
+
+commands:
+  start:
+    usage: '&eИспользование: &c/{label} start <игрок>'
+    success: '&aВы успешно начали слежку за игроком &e{target}'
+    already: '&cВы уже следите за игроком, пропишите /{label} end'
+    your-self: '&cВы не можете начать слежку за собой.'
+    no-player: '&cИгрок не найден.'
+  end:
+    success: '&aВы успешно прекратили слежку за игроком &e{target}'
+    already: '&cВы итак ни за кем не следите.'
+  reload:
+    success: '&aКонфиги перезагружены.'

@@ -1,0 +1,12 @@
+name: aqSpectate
+version: '${project.version}'
+main: org.aqu0ryy.spectate.Loader
+
+api-version: '1.16'
+
+author: aqu0ryy
+description: Плагин на режим слежки за игроками.
+
+commands:
+  aqspectate:
+    aliases: [ spec, aqs ]
